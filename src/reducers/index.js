@@ -1,9 +1,10 @@
-import {combineReducers} from 'redux'
+import { combineReducers } from 'redux'
 
 import gamesReducer from "./gamesReducers"
-
-const rootReducer=combineReducers({
-    games:gamesReducer,
+import detailReducer from './detailReducer'
+const rootReducer = combineReducers({
+    games: gamesReducer,
+    detail: detailReducer,
 });
 
 export default rootReducer;
